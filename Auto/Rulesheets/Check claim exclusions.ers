@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="7" minorServiceNumber="2" buildNumber="8014" updateStamp="_7PlUpDdOEeiZ9Yeq39-4-Q" externalChecksum="769041084:201531363:817121154">
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="7" minorServiceNumber="2" buildNumber="8014" updateStamp="_KRqMsTdPEeiZ9Yeq39-4-Q" externalChecksum="769041084:201531363:817121154">
   <languageCode>en_GB</languageCode>
   <ruleset vocabularyUpdateStamp="_bzOXEA2vEeiier_gN25aSQ" vocabulary="../Vocabularies/Claims%20Management.ecore#/">
     <rule/>
@@ -67,7 +67,20 @@
         </text>
       </ruleStatementItemList>
     </ruleStatementSection>
-    <conditionSection rowCount="48" columnWidthFactor="0.5"/>
+    <conditionSection rowCount="48" columnWidthFactor="0.5">
+      <conditionItemList>
+        <valueSetCell/>
+        <expressionCell external="Claim.BreakdownMileage">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Claim.BreakdownMileage" datatype="Integer" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="BreakdownMileage" datatype="Integer" termtype="ATTRIBUTE" fulltext="Claim.BreakdownMileage">
+                <parentTerm text="Claim" datatype="Claim" termtype="ENTITY" fulltext="Claim" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
     <ruleSection columnCount="17">
       <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0"/>
     </ruleSection>
