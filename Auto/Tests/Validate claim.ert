@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RuletestAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder="http:///com/corticon/rulesemf/viewtestmodel/ruletest/tabfolder.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.testsheet.treeset="http:///com/corticon/rulesemf/viewtestmodel/testsheet/treeset.ecore" majorVersionNumber="5" minorVersionNumber="7" buildNumber="8014" updateStamp="_IeUKIg2qEeiah_7P0tbIyA" externalChecksum="769041084:201531363">
+  <testsheetAssets majorVersionNumber="5" minorVersionNumber="7" buildNumber="8014" updateStamp="_U3sHERDKEeiGObuKT6bv4Q" externalChecksum="769041084:201531363">
+    <testsheet ruleActivityUpdateStamp="_FV1mUx1NEeiO6J2OOvkrow" ruleActivity="../Rulesheets/Check%20claim%20exclusions.ers#//@ruleset">
+      <input/>
+      <output>
+        <PostedMessage severity="Info" text="[2] Claims are considered for cars with breakdown mileage under 250K miles."/>
+      </output>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="../Vocabularies/Claims%20Management.ecore#//Client">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="John" eAttribute="../Vocabularies/Claims%20Management.ecore#//Client/Name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" manuallyCreated="true" eReference="../Vocabularies/Claims%20Management.ecore#//Client/policy" eClass="../Vocabularies/Claims%20Management.ecore#//Policy">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" manuallyCreated="true" eReference="../Vocabularies/Claims%20Management.ecore#//Policy/claim" eClass="../Vocabularies/Claims%20Management.ecore#//Claim">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="70000" eAttribute="../Vocabularies/Claims%20Management.ecore#//Claim/BreakdownMileage"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Accident" eAttribute="../Vocabularies/Claims%20Management.ecore#//Claim/ClaimType"/>
+            </children>
+          </children>
+        </children>
+      </inputRoot>
+      <outputRoot newOrModified="true"/>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+      <expectedRoot/>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <testsheetAssets majorVersionNumber="5" minorVersionNumber="7" buildNumber="8014" updateStamp="_U3ersBDKEeiGObuKT6bv4Q" externalChecksum="769041084:201531363">
+    <testsheet ruleActivityUpdateStamp="_FV1mUx1NEeiO6J2OOvkrow" ruleActivity="../Rulesheets/Check%20claim%20exclusions.ers#//@ruleset">
+      <input/>
+      <output>
+        <PostedMessage severity="Violation" text="[1] Claims are rejected when mechanical failures are claimed."/>
+        <PostedMessage severity="Warning" text="[3] Claims may be rejected due to fraud for claims pertaining to accidents and theft and mileage over 250K."/>
+        <PostedMessage severity="Info" text="[2] Claims are considered for cars with breakdown mileage under 250K miles."/>
+      </output>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="../Vocabularies/Claims%20Management.ecore#//Client">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="John" eAttribute="../Vocabularies/Claims%20Management.ecore#//Client/Name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" manuallyCreated="true" eReference="../Vocabularies/Claims%20Management.ecore#//Client/policy" eClass="../Vocabularies/Claims%20Management.ecore#//Policy">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" manuallyCreated="true" eReference="../Vocabularies/Claims%20Management.ecore#//Policy/claim" eClass="../Vocabularies/Claims%20Management.ecore#//Claim">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="70000" eAttribute="../Vocabularies/Claims%20Management.ecore#//Claim/BreakdownMileage"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Accident" eAttribute="../Vocabularies/Claims%20Management.ecore#//Claim/ClaimType"/>
+            </children>
+          </children>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" manuallyCreated="true" eClass="../Vocabularies/Claims%20Management.ecore#//Client">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Sue" eAttribute="../Vocabularies/Claims%20Management.ecore#//Client/Name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" manuallyCreated="true" eReference="../Vocabularies/Claims%20Management.ecore#//Client/policy" eClass="../Vocabularies/Claims%20Management.ecore#//Policy">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" manuallyCreated="true" eReference="../Vocabularies/Claims%20Management.ecore#//Policy/claim" eClass="../Vocabularies/Claims%20Management.ecore#//Claim">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="70000" eAttribute="../Vocabularies/Claims%20Management.ecore#//Claim/BreakdownMileage"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Mechanical failure" eAttribute="../Vocabularies/Claims%20Management.ecore#//Claim/ClaimType"/>
+            </children>
+          </children>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" manuallyCreated="true" eClass="../Vocabularies/Claims%20Management.ecore#//Client">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Ellen" eAttribute="../Vocabularies/Claims%20Management.ecore#//Client/Name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" manuallyCreated="true" eReference="../Vocabularies/Claims%20Management.ecore#//Client/policy" eClass="../Vocabularies/Claims%20Management.ecore#//Policy">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" manuallyCreated="true" eReference="../Vocabularies/Claims%20Management.ecore#//Policy/claim" eClass="../Vocabularies/Claims%20Management.ecore#//Claim">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="280000" eAttribute="../Vocabularies/Claims%20Management.ecore#//Claim/BreakdownMileage"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Accident" eAttribute="../Vocabularies/Claims%20Management.ecore#//Claim/ClaimType"/>
+            </children>
+          </children>
+        </children>
+      </inputRoot>
+      <outputRoot newOrModified="true"/>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+      <expectedRoot/>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <testsheetAssets majorVersionNumber="5" minorVersionNumber="7" buildNumber="8014" updateStamp="_JDRhYR1NEeiO6J2OOvkrow" externalChecksum="769041084:201531363">
+    <comments timestamp="2018-02-09T16:04:35.143+0100" username="hverlee" text="All dates OK" objects="#//@testsheetAssets.2/@testsheetViewList.0/@inputRoot/@children.0" type="Note"/>
+    <comments timestamp="2018-02-09T16:04:35.143+0100" username="hverlee" text="No insurance coverage at claim date" objects="#//@testsheetAssets.2/@testsheetViewList.0/@inputRoot/@children.1" type="Note"/>
+    <comments timestamp="2018-02-09T16:04:35.143+0100" username="hverlee" text="Loss date after claim date????" objects="#//@testsheetAssets.2/@testsheetViewList.0/@inputRoot/@children.2" type="Note"/>
+    <testsheet ruleActivityUpdateStamp="_gZIfEhDMEeiGObuKT6bv4Q" ruleActivity="../Ruleflows/Validate%20Claim.erf#//@ruleflow" majorVersion="1" minorVersion="0">
+      <input/>
+      <output>
+        <PostedMessage severity="Info" text="[Check_claim_exclusions,2] Claims are considered for cars with breakdown mileage under 250K miles."/>
+        <PostedMessage severity="Info" text="[Check_claim_exclusions,2] Claims are considered for cars with breakdown mileage under 250K miles."/>
+        <PostedMessage severity="Info" text="[Check_claim_exclusions,2] Claims are considered for cars with breakdown mileage under 250K miles."/>
+        <PostedMessage severity="Violation" text="[Validate_Claim_Dates,1] If claim date is before policy start date, then claim request is rejected."/>
+        <PostedMessage severity="Info" text="[Validate_Claim_Dates,3] The claim date is after the policy start date but the claim loss date is after the claim date which is suspicious. This case needs to be manually reviewed."/>
+        <PostedMessage severity="Info" text="[Validate_Claim_Dates,2] If claim loss date is on or before the claim date, then claim is valid."/>
+        <PostedMessage severity="Violation" text="[Calculate_Claim_Costs,1] Claims labor costs must be provided. Claim is rejected."/>
+        <PostedMessage severity="Info" text="[Calculate_Claim_Costs,2] Claims labor costs are correct."/>
+        <PostedMessage severity="Info" text="[Calculate_Claim_Costs,2] Claims labor costs are correct."/>
+        <PostedMessage severity="Info" text="[Calculate_Claim_Costs,4] Claim part costs are correct."/>
+        <PostedMessage severity="Info" text="[Calculate_Claim_Costs,4] Claim part costs are correct."/>
+        <PostedMessage severity="Info" text="[Calculate_Claim_Costs,4] Claim part costs are correct."/>
+        <PostedMessage severity="Info" text="[Calculate_Claim_Costs,5] Claim labor and part costs are both valid."/>
+        <PostedMessage severity="Info" text="[Calculate_Claim_Costs,5] Claim labor and part costs are both valid."/>
+        <PostedMessage severity="Info" text="[Validate_Claim_Costs,1] If total claim costs are equal or below the policy indemnification limit amount, then the claim is valid."/>
+        <PostedMessage severity="Info" text="[Validate_Claim_Costs,1] If total claim costs are equal or below the policy indemnification limit amount, then the claim is valid."/>
+        <PostedMessage severity="Violation" text="[Validate_Claim_Costs,4] If labor and/or part costs are not or partially provided, then the claim is rejected."/>
+        <PostedMessage severity="Info" text="[Validate_Overall_Claim,1] Claim is valid when all checks have been succesfully validated."/>
+        <PostedMessage severity="Violation" text="[Validate_Overall_Claim,3] Claim is invalid as claim limit validation check has failed."/>
+        <PostedMessage severity="Violation" text="[Validate_Overall_Claim,5] Claim is invalid as labor costs validation check has failed."/>
+        <PostedMessage severity="Violation" text="[Validate_Overall_Claim,6] Claim is invalid as date validations check has failed."/>
+        <PostedMessage severity="Violation" text="[Validate_Overall_Claim,6] Claim is invalid as date validations check has failed."/>
+      </output>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="../Vocabularies/Claims%20Management.ecore#//Client">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="John" eAttribute="../Vocabularies/Claims%20Management.ecore#//Client/Name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" manuallyCreated="true" eReference="../Vocabularies/Claims%20Management.ecore#//Client/policy" eClass="../Vocabularies/Claims%20Management.ecore#//Policy">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2018/01/01" eAttribute="../Vocabularies/Claims%20Management.ecore#//Policy/ValidFromDate"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" manuallyCreated="true" eReference="../Vocabularies/Claims%20Management.ecore#//Policy/claim" eClass="../Vocabularies/Claims%20Management.ecore#//Claim">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2018/04/01" eAttribute="../Vocabularies/Claims%20Management.ecore#//Claim/ClaimDate"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2018/03/15" eAttribute="../Vocabularies/Claims%20Management.ecore#//Claim/LossDate"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="500.00" eAttribute="../Vocabularies/Claims%20Management.ecore#//Claim/LaborCosts"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="400.00" eAttribute="../Vocabularies/Claims%20Management.ecore#//Claim/PartsCosts"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="70000" eAttribute="../Vocabularies/Claims%20Management.ecore#//Claim/BreakdownMileage"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Accident" eAttribute="../Vocabularies/Claims%20Management.ecore#//Claim/ClaimType"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1000.00" eAttribute="../Vocabularies/Claims%20Management.ecore#//Policy/IndemnificationLimitAmount"/>
+          </children>
+          <comments>All dates OK</comments>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" manuallyCreated="true" eClass="../Vocabularies/Claims%20Management.ecore#//Client">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Sue" eAttribute="../Vocabularies/Claims%20Management.ecore#//Client/Name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" manuallyCreated="true" eReference="../Vocabularies/Claims%20Management.ecore#//Client/policy" eClass="../Vocabularies/Claims%20Management.ecore#//Policy">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2018/01/01" eAttribute="../Vocabularies/Claims%20Management.ecore#//Policy/ValidFromDate"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" manuallyCreated="true" eReference="../Vocabularies/Claims%20Management.ecore#//Policy/claim" eClass="../Vocabularies/Claims%20Management.ecore#//Claim">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2017/12/01" eAttribute="../Vocabularies/Claims%20Management.ecore#//Claim/ClaimDate"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2018/02/15" eAttribute="../Vocabularies/Claims%20Management.ecore#//Claim/LossDate"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="500.00" eAttribute="../Vocabularies/Claims%20Management.ecore#//Claim/LaborCosts"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="400.00" eAttribute="../Vocabularies/Claims%20Management.ecore#//Claim/PartsCosts"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Accident" eAttribute="../Vocabularies/Claims%20Management.ecore#//Claim/ClaimType"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="15000" eAttribute="../Vocabularies/Claims%20Management.ecore#//Claim/BreakdownMileage"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1000.00" eAttribute="../Vocabularies/Claims%20Management.ecore#//Policy/IndemnificationLimitAmount"/>
+          </children>
+          <comments>No insurance coverage at claim date</comments>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" manuallyCreated="true" eClass="../Vocabularies/Claims%20Management.ecore#//Client">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Ellen" eAttribute="../Vocabularies/Claims%20Management.ecore#//Client/Name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" manuallyCreated="true" eReference="../Vocabularies/Claims%20Management.ecore#//Client/policy" eClass="../Vocabularies/Claims%20Management.ecore#//Policy">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2018/01/01" eAttribute="../Vocabularies/Claims%20Management.ecore#//Policy/ValidFromDate"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" manuallyCreated="true" eReference="../Vocabularies/Claims%20Management.ecore#//Policy/claim" eClass="../Vocabularies/Claims%20Management.ecore#//Claim">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2018/04/01" eAttribute="../Vocabularies/Claims%20Management.ecore#//Claim/ClaimDate"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2018/05/15" eAttribute="../Vocabularies/Claims%20Management.ecore#//Claim/LossDate">
+                <comments></comments>
+              </children>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.00" eAttribute="../Vocabularies/Claims%20Management.ecore#//Claim/LaborCosts"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="400.00" eAttribute="../Vocabularies/Claims%20Management.ecore#//Claim/PartsCosts"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="26598" eAttribute="../Vocabularies/Claims%20Management.ecore#//Claim/BreakdownMileage"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Accident" eAttribute="../Vocabularies/Claims%20Management.ecore#//Claim/ClaimType"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="500.00" eAttribute="../Vocabularies/Claims%20Management.ecore#//Policy/IndemnificationLimitAmount"/>
+          </children>
+          <comments>Loss date after claim date????</comments>
+        </children>
+      </inputRoot>
+      <outputRoot newOrModified="true"/>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+      <expectedRoot/>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <testsheetAssets majorVersionNumber="5" minorVersionNumber="7" buildNumber="8014" updateStamp="_U3rgABDKEeiGObuKT6bv4Q" externalChecksum="769041084:201531363">
+    <testsheet ruleActivityUpdateStamp="_gZIfEhDMEeiGObuKT6bv4Q" databaseMode="ReadOnly" ruleActivity="../Ruleflows/Validate%20Claim.erf#//@ruleflow">
+      <input/>
+      <output>
+        <PostedMessage severity="Info" text="[Check_claim_exclusions,2] Claims are considered for cars with breakdown mileage under 250K miles."/>
+        <PostedMessage severity="Info" text="[Check_claim_exclusions,2] Claims are considered for cars with breakdown mileage under 250K miles."/>
+        <PostedMessage severity="Violation" text="[Validate_Claim_Dates,1] If claim date is before policy start date, then claim request is rejected."/>
+        <PostedMessage severity="Info" text="[Validate_Claim_Dates,2] If claim loss date is on or before the claim date, then claim is valid."/>
+        <PostedMessage severity="Info" text="[Calculate_Claim_Costs,2] Claims labor costs are correct. Claim is valid."/>
+        <PostedMessage severity="Info" text="[Calculate_Claim_Costs,2] Claims labor costs are correct. Claim is valid."/>
+        <PostedMessage severity="Info" text="[Calculate_Claim_Costs,5] Claim labor and part costs are both valid."/>
+        <PostedMessage severity="Info" text="[Calculate_Claim_Costs,5] Claim labor and part costs are both valid."/>
+        <PostedMessage severity="Info" text="[Validate_Claim_Costs,1] If total claim costs are equal or below the policy indemnification limit amount, then the claim is valid."/>
+        <PostedMessage severity="Violation" text="[Validate_Claim_Costs,2] If total claim costs are greater than the policy indemnification limit amount, then the claim is rejected."/>
+        <PostedMessage severity="Info" text="[Validate_Overall_Claim,1] Claim is valid when all checks have been succesfully validated."/>
+        <PostedMessage severity="Violation" text="[Validate_Overall_Claim,3] Claim is invalid as claim limit validation check has failed."/>
+        <PostedMessage severity="Violation" text="[Validate_Overall_Claim,6] Claim is invalid as date validations check has failed."/>
+      </output>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot/>
+      <outputRoot newOrModified="true"/>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+      <expectedRoot/>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <testsheetAssets majorVersionNumber="5" minorVersionNumber="7" buildNumber="8014" updateStamp="_U3sHEBDKEeiGObuKT6bv4Q" externalChecksum="769041084:201531363">
+    <testsheet ruleActivityUpdateStamp="_gZIfEhDMEeiGObuKT6bv4Q" ruleActivity="../Ruleflows/Validate%20Claim.erf#//@ruleflow">
+      <input/>
+      <output>
+        <PostedMessage severity="Violation" text="No Entity Identity Attributes inside Entity (Claim) for Datasource (Claims) have Columns mapped :: IADCRead (AllClaims) at sequence (3) SQL (SELECT * FROM Claim WHERE RpolicyAssoc_ID IN (?,?)) with Variables ([1, 2])."/>
+        <PostedMessage severity="Info" text="Claims are considered for cars with breakdown mileage under 250K miles."/>
+        <PostedMessage severity="Info" text="Claims are considered for cars with breakdown mileage under 250K miles."/>
+        <PostedMessage severity="Violation" text="If claim date is before policy start date, then claim request is rejected."/>
+        <PostedMessage severity="Info" text="If claim loss date is on or before the claim date, then claim is valid."/>
+        <PostedMessage severity="Info" text="Claims labor costs are correct. Claim is valid."/>
+        <PostedMessage severity="Info" text="Claims labor costs are correct. Claim is valid."/>
+        <PostedMessage severity="Info" text="Claim labor and part costs are both valid."/>
+        <PostedMessage severity="Info" text="Claim labor and part costs are both valid."/>
+        <PostedMessage severity="Info" text="If total claim costs are equal or below the policy indemnification limit amount, then the claim is valid."/>
+        <PostedMessage severity="Violation" text="If total claim costs are greater than the policy indemnification limit amount, then the claim is rejected."/>
+        <PostedMessage severity="Info" text="Claim is valid when all checks have been succesfully validated."/>
+        <PostedMessage severity="Violation" text="Claim is invalid as claim limit validation check has failed."/>
+        <PostedMessage severity="Violation" text="Claim is invalid as date validations check has failed."/>
+      </output>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot/>
+      <outputRoot newOrModified="true"/>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600">
+        <messageItemList postedMessage="#//@testsheetAssets.4/@testsheet/@output/@PostedMessage.0"/>
+      </outputMessageSection>
+      <expectedRoot/>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <ruletest vocabularyUpdateStamp="_bzOXEA2vEeiier_gN25aSQ" testsheets="#//@testsheetAssets.0/@testsheet #//@testsheetAssets.1/@testsheet #//@testsheetAssets.2/@testsheet #//@testsheetAssets.3/@testsheet #//@testsheetAssets.4/@testsheet" vocabulary="../Vocabularies/Claims%20Management.ecore#/"/>
+  <ruletestViewList xsi:type="com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder:TestTabFolder">
+    <testTabList name="Simple"/>
+    <testTabList name="Extended"/>
+    <testTabList name="Validate claim"/>
+    <testTabList name="EDC"/>
+    <testTabList name="ADC"/>
+  </ruletestViewList>
+</com.corticon.rulesemf.assetmodel:RuletestAsset>

@@ -1,0 +1,27 @@
+Exclusion rules
+
+Claims are rejected when mechanical failures are claimed.
+Claims are considered for cars with breakdown mileage under 250K miles.
+Claims may be rejected due to fraud for claims pertaining to accidents and theft and mileage over 250K.
+
+
+
+
+
+
+Date rules
+
+1. If claim date is before policy start date, then claim request is rejected.
+
+Client.policy.claim.ClaimDate < Client.policy.ValidFromDate
+
+
+
+2. If claim loss date is on or before the claim date, then claim is valid.
+
+
+Client.policy.claim.LossDate <= Client.policy.claim.ClaimDate
+
+
+
+3. The claim date is after the policy start date but the claim loss date is after the claim date which is suspicious. This case needs to be manually reviewed.
