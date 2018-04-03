@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="7" buildNumber="8014" updateStamp="_icT9PQ2qEeiier_gN25aSQ" externalChecksum="1229514692:201531363:252065899">
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="7" minorServiceNumber="2" buildNumber="8014" updateStamp="_icT9PQ2qEeiier_gN25aSQ" externalChecksum="769041084:201531363:817121154">
   <languageCode>en_US</languageCode>
-  <ruleset vocabularyUpdateStamp="_iaCsUA2qEeiier_gN25aSQ" vocabulary="../Vocabularies/Claims%20Management.ecore#/">
+  <ruleset vocabularyUpdateStamp="_bzOXEA2vEeiier_gN25aSQ" vocabulary="../Vocabularies/Claims%20Management.ecore#/">
     <rule/>
     <rule documentingRuleStatements="#//@ruleset/@ruleStatements.0">
       <condition>
@@ -350,7 +350,7 @@
       </extension>
     </logicalVariable>
   </ruleset>
-  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" advanced="true" sashWeightAdvancedView="16" sashWeightScope="56" sashWeightConditionsIf="38">
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" sashWeightAdvancedView="16" sashWeightScope="56" sashWeightConditionsIf="38">
     <actionSection rowCount="49" columnWidthFactor="0.5">
       <actionItemList>
         <naturalLanguageText value="Is the claim valid based on the policy's indemnification threshold amount?"/>
