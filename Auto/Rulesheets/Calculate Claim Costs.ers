@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="7" minorServiceNumber="2" buildNumber="8014" updateStamp="_fdWoBjdHEeiJnoZeiMUSvw" externalChecksum="769041084:201531363:817121154">
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="7" minorServiceNumber="2" buildNumber="8014" updateStamp="_6vkcBjdHEeiJnoZeiMUSvw" externalChecksum="769041084:201531363:817121154">
   <languageCode>en_US</languageCode>
   <ruleset vocabularyUpdateStamp="_bzOXEA2vEeiier_gN25aSQ" vocabulary="../Vocabularies/Claims%20Management.ecore#/">
     <rule>
@@ -232,8 +232,8 @@
         </opaqueExpression>
       </action>
       <action>
-        <opaqueExpression expression="TheClaim.PartsCostsStatus = 'Rejected'">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="TheClaim.PartsCostsStatus = 'Rejected'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+        <opaqueExpression expression="TheClaim.PartsCostsStatus = 'Valid'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="TheClaim.PartsCostsStatus = 'Valid'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
               <terms text="PartsCostsStatus" datatype="String" termtype="ATTRIBUTE" fulltext="TheClaim.PartsCostsStatus">
                 <parentTerm text="TheClaim" datatype="Claim" termtype="ENTITY" fulltext="TheClaim">
@@ -714,8 +714,8 @@
             </referencedTermList>
           </parserOutput>
         </actionValueSetCellList>
-        <actionValueSetCellList valueSet="'Rejected'">
-          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="TheClaim.PartsCostsStatus = 'Rejected'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+        <actionValueSetCellList valueSet="'Valid'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="TheClaim.PartsCostsStatus = 'Valid'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
               <terms text="PartsCostsStatus" datatype="String" termtype="ATTRIBUTE" fulltext="TheClaim.PartsCostsStatus">
                 <parentTerm text="TheClaim" datatype="Claim" termtype="ENTITY" fulltext="TheClaim">
