@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.canonicalvocabularymodel="http:///com/corticon/rulesemf/canonicalvocabularymodel.ecore" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="root" nsURI="http://root/1.0" nsPrefix="root">
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.canonicalvocabularymodel="http:///com/corticon/rulesemf/canonicalvocabularymodel.ecore" xmlns:com.corticon.rulesemf.common="http:///com/corticon/rulesemf/common.ecore" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="root" nsURI="http://root/1.0" nsPrefix="root">
   <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
-    <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:RootExtension" majorVersionNumber="5" minorVersionNumber="7" buildNumber="8014" updateStamp="_bzOXEA2vEeiier_gN25aSQ" externalChecksum="1229514692:201531363" customDataTypeDisplayCount="50">
+    <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:RootExtension" majorVersionNumber="5" minorVersionNumber="7" majorServiceNumber="2" minorServiceNumber="2" buildNumber="8015" updateStamp="_Um6rgOKREei7spjnQ0zx1A" externalChecksum="1506831186:201531363" customDataTypeDisplayCount="50">
       <languageCode>en_US</languageCode>
+      <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_Um42UOKREei7spjnQ0zx1A" key="18" type="Validation" severity="Warning" invalidObjects="#//%http:%2F%2F%2Fcom%2Fcorticon%2Frulesemf%2Fcanonicalvocabularymodel%2FVocabularyExtension%/@contents.0/@vocabularyMappings.2/@entityMappings.0/@mappingProperties.0/@value #//Claim/%http:%2F%2F%2Fcom%2Fcorticon%2Frulesemf%2Fcanonicalvocabularymodel%2FVocabularyExtension%/@contents.0" textKey="VocabularyModelAPIImpl.Validation.DatabaseMetadata.EntityBadColumn" locationKey="VocabularyModelAPIImpl.Validation.Location.Entity">
+        <textVariables>ClaimID</textVariables>
+        <locationVariables>Claim</locationVariables>
+      </validationMessages>
       <databaseAccess databasePropertyDisplayCount="50">
         <databaseId manuallyCreated="true" value="com.corticon.database.id.MsSql2016"/>
         <databaseURL manuallyCreated="true" value="jdbc:progress:sqlserver://localhost:1433;databaseName=Claims"/>
@@ -58,9 +62,6 @@
         <mappingProperties key="PASSWORD">
           <value manuallyCreated="true" value="030061083046038023060048124082"/>
         </mappingProperties>
-        <mappingProperties key="QUERY_SERVICE">
-          <value manuallyCreated="true" value="true"/>
-        </mappingProperties>
       </vocabularyMappings>
       <vocabularyMappings name="Claims" ID="DATABASE_2" mappingType="DATABASE">
         <mappingProperties key="SERVER">
@@ -80,7 +81,7 @@
         </mappingProperties>
         <entityMappings element="#//Claim">
           <mappingProperties key="identity">
-            <value manuallyCreated="true" value="ClaimID"/>
+            <value validationMessages="#//%http:%2F%2F%2Fcom%2Fcorticon%2Frulesemf%2Fcanonicalvocabularymodel%2FVocabularyExtension%/@contents.0/@validationMessages.0" manuallyCreated="true" value="ClaimID"/>
           </mappingProperties>
           <children element="#//Claim/PolicyID">
             <mappingProperties key="columnName">
@@ -156,6 +157,23 @@
             </foreignKeyMetadataList>
           </tableMetadataList>
         </databaseMetadata>
+      </vocabularyMappings>
+      <vocabularyMappings name="QUERY" ID="QUERY" mappingType="QUERY">
+        <mappingProperties key="PASSWORD">
+          <value manuallyCreated="true" value="030061083046038023060048124082"/>
+        </mappingProperties>
+        <mappingProperties key="USERNAME">
+          <value manuallyCreated="true" value="061046"/>
+        </mappingProperties>
+        <mappingProperties key="SERVER">
+          <value manuallyCreated="true" value="com.corticon.database.id.MsSql2014"/>
+        </mappingProperties>
+        <mappingProperties key="QUERY_SERVICE">
+          <value manuallyCreated="true" value="true"/>
+        </mappingProperties>
+        <mappingProperties key="URL">
+          <value manuallyCreated="true" value="jdbc:progress:sqlserver://rollbasevm:1433;databaseName=Corticon57ADC_ConfigDB"/>
+        </mappingProperties>
       </vocabularyMappings>
     </contents>
   </eAnnotations>
@@ -294,7 +312,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Claim">
     <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
-      <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:EntityExtension">
+      <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:EntityExtension" validationMessages="#//%http:%2F%2F%2Fcom%2Fcorticon%2Frulesemf%2Fcanonicalvocabularymodel%2FVocabularyExtension%/@contents.0/@validationMessages.0">
         <name manuallyCreated="true" value="Claim"/>
         <datastorePersistent manuallyCreated="true" value="false"/>
       </contents>

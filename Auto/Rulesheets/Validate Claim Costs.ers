@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="7" minorServiceNumber="2" buildNumber="8014" updateStamp="_icT9PQ2qEeiier_gN25aSQ" externalChecksum="769041084:201531363:817121154">
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="5" minorVersionNumber="7" majorServiceNumber="2" minorServiceNumber="2" buildNumber="8015" updateStamp="_Qq13geKREei7spjnQ0zx1A" externalChecksum="1506831186:201531363:3703121802">
   <languageCode>en_US</languageCode>
-  <ruleset vocabularyUpdateStamp="_bzOXEA2vEeiier_gN25aSQ" vocabulary="../Vocabularies/Claims%20Management.ecore#/">
+  <ruleset vocabularyUpdateStamp="_QotwkOKREei7spjnQ0zx1A" vocabulary="../Vocabularies/Claims%20Management.ecore#/">
     <rule/>
     <rule documentingRuleStatements="#//@ruleset/@ruleStatements.0">
       <condition>
@@ -62,9 +62,9 @@
           <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="TheClaim.ClaimLimitStatus = 'Valid'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
               <terms text="ClaimLimitStatus" datatype="String" termtype="ATTRIBUTE" fulltext="TheClaim.ClaimLimitStatus">
-                <parentTerm text="TheClaim" datatype="Claim" termtype="ENTITY" fulltext="TheClaim">
-                  <parentTerm text="ThePolicy" datatype="Policy" termtype="ENTITY" fulltext="ThePolicy">
-                    <parentTerm text="Client" datatype="Client" termtype="ENTITY" fulltext="Client"/>
+                <parentTerm text="TheClaim" datatype="Claim" termtype="ENTITY" fulltext="TheClaim" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="ThePolicy" datatype="Policy" termtype="ENTITY" fulltext="ThePolicy" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Client" datatype="Client" termtype="ENTITY" fulltext="Client" variable="#//@ruleset/@logicalVariables.0"/>
                   </parentTerm>
                 </parentTerm>
               </terms>
@@ -124,9 +124,9 @@
           <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="TheClaim.ClaimLimitStatus = 'Rejected'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
               <terms text="ClaimLimitStatus" datatype="String" termtype="ATTRIBUTE" fulltext="TheClaim.ClaimLimitStatus">
-                <parentTerm text="TheClaim" datatype="Claim" termtype="ENTITY" fulltext="TheClaim">
-                  <parentTerm text="ThePolicy" datatype="Policy" termtype="ENTITY" fulltext="ThePolicy">
-                    <parentTerm text="Client" datatype="Client" termtype="ENTITY" fulltext="Client"/>
+                <parentTerm text="TheClaim" datatype="Claim" termtype="ENTITY" fulltext="TheClaim" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="ThePolicy" datatype="Policy" termtype="ENTITY" fulltext="ThePolicy" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Client" datatype="Client" termtype="ENTITY" fulltext="Client" variable="#//@ruleset/@logicalVariables.0"/>
                   </parentTerm>
                 </parentTerm>
               </terms>
@@ -181,9 +181,9 @@
           <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="TheClaim.ClaimLimitStatus = 'Rejected'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
               <terms text="ClaimLimitStatus" datatype="String" termtype="ATTRIBUTE" fulltext="TheClaim.ClaimLimitStatus">
-                <parentTerm text="TheClaim" datatype="Claim" termtype="ENTITY" fulltext="TheClaim">
-                  <parentTerm text="ThePolicy" datatype="Policy" termtype="ENTITY" fulltext="ThePolicy">
-                    <parentTerm text="Client" datatype="Client" termtype="ENTITY" fulltext="Client"/>
+                <parentTerm text="TheClaim" datatype="Claim" termtype="ENTITY" fulltext="TheClaim" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="ThePolicy" datatype="Policy" termtype="ENTITY" fulltext="ThePolicy" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Client" datatype="Client" termtype="ENTITY" fulltext="Client" variable="#//@ruleset/@logicalVariables.0"/>
                   </parentTerm>
                 </parentTerm>
               </terms>
@@ -238,9 +238,9 @@
           <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="TheClaim.ClaimLimitStatus = 'Rejected'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
               <terms text="ClaimLimitStatus" datatype="String" termtype="ATTRIBUTE" fulltext="TheClaim.ClaimLimitStatus">
-                <parentTerm text="TheClaim" datatype="Claim" termtype="ENTITY" fulltext="TheClaim">
-                  <parentTerm text="ThePolicy" datatype="Policy" termtype="ENTITY" fulltext="ThePolicy">
-                    <parentTerm text="Client" datatype="Client" termtype="ENTITY" fulltext="Client"/>
+                <parentTerm text="TheClaim" datatype="Claim" termtype="ENTITY" fulltext="TheClaim" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="ThePolicy" datatype="Policy" termtype="ENTITY" fulltext="ThePolicy" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Client" datatype="Client" termtype="ENTITY" fulltext="Client" variable="#//@ruleset/@logicalVariables.0"/>
                   </parentTerm>
                 </parentTerm>
               </terms>
@@ -295,9 +295,9 @@
           <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="TheClaim.ClaimLimitStatus = 'Rejected'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
             <modifiedTermList>
               <terms text="ClaimLimitStatus" datatype="String" termtype="ATTRIBUTE" fulltext="TheClaim.ClaimLimitStatus">
-                <parentTerm text="TheClaim" datatype="Claim" termtype="ENTITY" fulltext="TheClaim">
-                  <parentTerm text="ThePolicy" datatype="Policy" termtype="ENTITY" fulltext="ThePolicy">
-                    <parentTerm text="Client" datatype="Client" termtype="ENTITY" fulltext="Client"/>
+                <parentTerm text="TheClaim" datatype="Claim" termtype="ENTITY" fulltext="TheClaim" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="ThePolicy" datatype="Policy" termtype="ENTITY" fulltext="ThePolicy" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="Client" datatype="Client" termtype="ENTITY" fulltext="Client" variable="#//@ruleset/@logicalVariables.0"/>
                   </parentTerm>
                 </parentTerm>
               </terms>
